@@ -56,7 +56,7 @@ const comp_webrtc = {
                   if( result.type == "ready"){
                       this.$store.state.is_webrtc = true;
                       this.remote_image = null;
-                      this.toast_show("WebRTCが接続されました。");
+                      this.toast_show("WebRTCが接続中です。");
                   }else
                   if( result.type == "closed" ){
                       this.toast_show("Signalingが切断されました。");
