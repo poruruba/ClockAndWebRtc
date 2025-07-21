@@ -1,0 +1,10 @@
+{
+  "name": "cordova-plugin-simplesensor",
+  "version": "0.0.1",
+  "cordova": {
+    "id": "cordova-plugin-simplesensor",
+    "platforms": [
+      "android"
+    ]
+  }
+}

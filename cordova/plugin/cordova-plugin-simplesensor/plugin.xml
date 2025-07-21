@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-simplesensor" version="0.0.1">
+    <name>SimpleSensor</name>
+    <js-module src="www/plugin_simplesensor.js" name="simplesensor">
+        <clobbers target="simplesensor" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SimpleSensor" >
+                <param name="android-package" value="jp.or.sample.plugin.SimpleSensor.Main"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.SENSOR" />
+        </config-file>
+        <source-file src="src/android/jp/or/sample/plugin/SimpleSensor/Main.java" target-dir="src/jp/or/sample/plugin/SimpleSensor" />
+    </platform>
+</plugin>
