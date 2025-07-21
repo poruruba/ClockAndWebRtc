@@ -73,7 +73,7 @@ const comp_webrtc = {
                             file_ext = ".jpg";
                         if( result.info.ftype == "image/png" )
                             file_ext = ".jpg";
-                        if( result.info.ftype == "image/bitmap" )
+                        if( result.info.ftype == "image/bmp" )
                             file_ext = ".bmp";
                       try{
                         if( file_ext ){
