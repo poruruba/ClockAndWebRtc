@@ -71,8 +71,11 @@
         </div>
 
         <hr>
-        <label>カメラ</label>
+        <label>ディスプレイ</label>
+        <button class="btn btn-default" v-on:click="attach_display">Display</button><br>
+        <br>
         <div class="form-inline">
+          <label>カメラ</label>
           <button class="btn btn-default" v-on:click="attach_camera">Camera</button> <select class="form-control" v-model="facing_mode">
             <option value="environment">environment</option>
             <option value="user">user</option>
