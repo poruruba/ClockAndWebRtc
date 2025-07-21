@@ -87,6 +87,20 @@ var vue_options = {
             }
         },
 
+        attach_display: async function(){
+            var stream;
+            if( navigator.mediaDevices && navigator.mediaDevices.getDisplayMedia )
+                stream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: true });
+            else
+                throw new Error("not display stream");
+
+            const video = document.querySelector('#localcamera_view');
+            video.src = null;
+            video.srcObject = stream;
+
+            this.slave.replaceTrack(stream);
+        },
+
         attach_camera: async function(){
             const constraints = {
                 video: { facingMode: this.facing_mode },
