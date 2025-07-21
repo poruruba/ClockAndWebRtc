@@ -1,0 +1,60 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.top-fullscreen {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  background-color: #000000;
+}
+
+.top-float {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  top: 0%;
+  left: 0%;
+  pointer-events: none;
+}
+
+.top-text-center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.top-text-leftbottom {
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.top-text-leftbottom * .time_style {
+  color: white;
+  font-size: 150px;
+}
+.top-text-leftbottom * .date_style {
+  color: white;
+  font-size: 50px;
+}
+
+.top-text-center .time_style {
+  color: white;
+  font-size: 200px;
+}
+.top-text-center .date_style {
+  color: white;
+  font-size: 80px;
+}
+
