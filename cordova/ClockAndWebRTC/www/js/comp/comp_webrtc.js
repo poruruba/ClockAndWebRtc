@@ -9,7 +9,7 @@ const comp_webrtc = {
   store: vue_store,
   template: `
   <div>
-    <video id="remotecamera_view" class="top-fullscreen" autoplay></video>
+    <video id="remotecamera_view" class="top-fullscreen" autoplay controls></video>
     <img v-bind:src="remote_image" class="top-fullscreen" v-if="remote_image">
   </div>
   `,
