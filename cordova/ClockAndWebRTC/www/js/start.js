@@ -6,7 +6,7 @@
 
 const WebRTC_PORT = 3000;
 
-const LOCAL_CAMERA_ENABLE = true;
+const LOCAL_CAMERA_ENABLE = false;
 const CLOCK_UPDATE_INTERVAL = 20000;
 const BRIGHTNESS_UPDATE_INTERVAL = 10000; // 照度の取得頻度(msec)
 const BRIGHTNESS_THRESHOLD = 2.0; // ダーク表示にする照度の閾値
