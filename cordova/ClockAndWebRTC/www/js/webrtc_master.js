@@ -99,7 +99,7 @@ class WebrtcMaster {
             });
 
             peerConnection.addEventListener('connectionstatechange', (event) => {
-                if (this.callback) callback('peer', { type: 'connectionstatechange', remoteClientId: remoteClientId, connectionState: event.target.connectionState });
+                if (this.callback) this.callback('peer', { type: 'connectionstatechange', remoteClientId: remoteClientId, connectionState: event.target.connectionState });
             });
             peerConnection.addEventListener('negotiationneeded', (event) => {
                 if (this.callback) this.callback('peer', { type: 'negotiationneeded', remoteClientId: remoteClientId });
